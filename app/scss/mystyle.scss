@@ -1,16 +1,52 @@
-@import "_library";
-@import "_reset";
-@import "_setka";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=cyrillic);
-@font-face {
-	font-family: nautilys;
-	src: url("../fonts/nautiluspompilius.ttf");
-	font-weight: 400;
-	font-style: normal;
+$blue : #00bbff;
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: sans-serif;
 }
 p{
-	//color: red;
+	padding: 0;
+	margin: 0;
 }
-body{
-	//background: green;
+img{
+	width: 100%;
+}
+.email-wrapper{
+	width: 100%;
+	background: url('https://500303.ru/images/mail/bg.jpg') repeat-x;
+
+}
+.email-center{
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+	font-size: 16px;
+	padding: 15px;
+}
+.email-logo-wrapper{
+	display: inline-block;
+	max-width: 400px;
+	margin-top: 40px;
+}
+.email-title{
+	color: $blue;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 80px;
+}
+.email-text{
+	margin-top: 80px;
+	line-height: 30px;
+	font-size: 16px;
+}
+.email-button{
+	display: inline-block;
+	padding: 15px 35px;
+	background: $blue;
+	text-decoration: none;
+	color: #fff;
+	margin-top: 80px;
+	border-radius: 5px;
 }

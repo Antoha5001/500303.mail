@@ -14,7 +14,7 @@ var gulp           = require('gulp'),
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify"),
 		gcmq         = require("gulp-group-css-media-queries"),
-		srv 						= 'openserver.gulp:82';
+		srv 						= '500303.mail:82';
 
 // Скрипты проекта
 
@@ -80,7 +80,7 @@ gulp.task('watch', ['css-libs', 'js', 'browser-sync'], function() {
 	gulp.watch('app/scss/**/*.scss', ['css-libs']);
 	gulp.watch(['app/script/**/*.js', 'app/script/common.min.js'], ['js']);
 	//gulp.watch('500303_GULP/*.php', browserSync.reload);
-	gulp.watch('app/**/*.php').on('change', browserSync.reload);
+	gulp.watch('app/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('imagemin', function() {
